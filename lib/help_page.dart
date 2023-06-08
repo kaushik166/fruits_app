@@ -14,9 +14,9 @@ class _HelpPageState extends State<HelpPage> {
       body: Column(
         children: [
           Container(
-            height: 100,
+            height: 80,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -26,16 +26,16 @@ class _HelpPageState extends State<HelpPage> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "Help",
                     style: TextStyle(
                         fontSize: 17,
@@ -47,10 +47,10 @@ class _HelpPageState extends State<HelpPage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text(
+          const Text(
             "Lorem Ipsum is simply dummy text of the printing\n"
             "and typesetting industry. Lorem Ipsum has been\n"
             "the industry’s standard dummy text ever since the\n"
@@ -63,9 +63,9 @@ class _HelpPageState extends State<HelpPage> {
             "Lorem Ipsum passages, and more recently with\n"
             "desktop publishing software like Aldus PageMaker\n"
             "including versions of Lorem Ipsum.",
-            style: TextStyle(fontFamily: "poppins", fontSize: 15),
+            style: TextStyle(fontFamily: "poppins", fontSize: 13),
           ),
-          Text(
+          const Text(
             "Lorem Ipsum is simply dummy text of the printing\n"
             "and typesetting industry. Lorem Ipsum has been\n"
             "the industry’s standard dummy text ever since the\n"
@@ -78,7 +78,7 @@ class _HelpPageState extends State<HelpPage> {
             "Lorem Ipsum passages, and more recently with\n"
             "desktop publishing software like Aldus PageMaker\n"
             "including versions of Lorem Ipsum.",
-            style: TextStyle(fontFamily: "poppins", fontSize: 15),
+            style: TextStyle(fontFamily: "poppins", fontSize: 13),
           ),
         ],
       ),

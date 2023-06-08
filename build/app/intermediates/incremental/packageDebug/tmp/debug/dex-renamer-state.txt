@@ -1,4 +1,4 @@
-#Mon May 15 10:31:31 IST 2023
-base.0=/Users/kaushikkachhadiya/StudioProjects/fruits_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Jun 08 11:53:44 IST 2023
+base.0=/Users/kaushikkachhadiya/StudioProjects/fruits_apps/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

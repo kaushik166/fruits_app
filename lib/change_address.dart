@@ -16,7 +16,7 @@ class _ChangeAddressPageState extends State<ChangeAddressPage> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -26,16 +26,16 @@ class _ChangeAddressPageState extends State<ChangeAddressPage> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "Change Address",
                     style: TextStyle(
                         fontSize: 17,
@@ -50,7 +50,7 @@ class _ChangeAddressPageState extends State<ChangeAddressPage> {
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 10),
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "Address",
                   style: TextStyle(
@@ -72,7 +72,8 @@ class _ChangeAddressPageState extends State<ChangeAddressPage> {
                   decoration: InputDecoration(
                     hintText: "D Block  Ram Nagar ,Near Sai Petrol\n"
                         " Pump Ring Road Nagpur-440001.",
-                    hintStyle: TextStyle(fontFamily: "poppins", fontSize: 15),
+                    hintStyle:
+                        const TextStyle(fontFamily: "poppins", fontSize: 15),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -90,7 +91,7 @@ class _ChangeAddressPageState extends State<ChangeAddressPage> {
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0xff69A03A),
+              color: const Color(0xff69A03A),
               borderRadius: BorderRadius.circular(10),
             ),
             child: GestureDetector(

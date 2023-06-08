@@ -68,14 +68,14 @@ class _FavouritePageState extends State<FavouritePage> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: SafeArea(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20),
+                    padding: EdgeInsets.only(left: 20),
                     child: Text(
                       "Favourite",
                       style: TextStyle(
@@ -93,7 +93,7 @@ class _FavouritePageState extends State<FavouritePage> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: ListView(
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 children: List.generate(
                   list.length,
                   (index) => Padding(
@@ -112,7 +112,7 @@ class _FavouritePageState extends State<FavouritePage> {
                                 width: 80,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Padding(
@@ -122,12 +122,12 @@ class _FavouritePageState extends State<FavouritePage> {
                                 children: [
                                   Text(
                                     list[index]["name"],
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontFamily: "poppins",
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold),
                                   ),
-                                  Text(
+                                  const Text(
                                     "Pick up from organic farms",
                                     style: TextStyle(
                                         fontFamily: "poppins",
@@ -136,14 +136,14 @@ class _FavouritePageState extends State<FavouritePage> {
                                   Row(
                                     children: List.generate(
                                       5,
-                                      (index) => Icon(
+                                      (index) => const Icon(
                                         Icons.star,
                                         size: 17,
                                         color: Color(0xffe9ab5f),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Row(
@@ -162,18 +162,18 @@ class _FavouritePageState extends State<FavouritePage> {
                                           decoration: BoxDecoration(
                                               border: Border.all(
                                                   color: Colors.black54)),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.remove,
                                             size: 12,
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 15,
                                       ),
                                       Text(
                                           list[index]["isSelected"].toString()),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 15,
                                       ),
                                       GestureDetector(
@@ -190,7 +190,7 @@ class _FavouritePageState extends State<FavouritePage> {
                                           decoration: BoxDecoration(
                                               border: Border.all(
                                                   color: Colors.black54)),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add,
                                             size: 12,
                                           ),
@@ -201,55 +201,59 @@ class _FavouritePageState extends State<FavouritePage> {
                                 ],
                               ),
                             ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  list[index]["price"],
-                                  style: TextStyle(
-                                      fontFamily: "poppins",
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(
-                                  height: 30,
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    list[index]["isAdded"] = true;
-                                    setState(() {});
-                                  },
-                                  child: list[index]["isAdded"]
-                                      ? Text(
-                                          "Added",
-                                          style: TextStyle(
-                                              fontFamily: "poppins",
-                                              fontWeight: FontWeight.w500),
-                                        )
-                                      : Container(
-                                          height: 30,
-                                          width: 70,
-                                          decoration: BoxDecoration(
-                                              color: Color(0xffCC7D00),
-                                              borderRadius:
-                                                  BorderRadius.circular(7)),
-                                          child: Center(
-                                            child: Text(
-                                              "Add",
-                                              style: TextStyle(
-                                                  fontFamily: "poppins",
-                                                  color: Colors.white),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    list[index]["price"],
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontFamily: "poppins",
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const SizedBox(
+                                    height: 30,
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      list[index]["isAdded"] = true;
+                                      setState(() {});
+                                    },
+                                    child: list[index]["isAdded"]
+                                        ? const Text(
+                                            "Added",
+                                            style: TextStyle(
+                                                fontFamily: "poppins",
+                                                fontWeight: FontWeight.w500),
+                                          )
+                                        : Container(
+                                            height: 30,
+                                            width: 70,
+                                            decoration: BoxDecoration(
+                                                color: const Color(0xffCC7D00),
+                                                borderRadius:
+                                                    BorderRadius.circular(7)),
+                                            child: const Center(
+                                              child: Text(
+                                                "Add",
+                                                style: TextStyle(
+                                                    fontFamily: "poppins",
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                ),
-                              ],
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
-                        Divider(
+                        const Divider(
                           color: Colors.black,
                         ),
                       ],

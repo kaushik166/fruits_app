@@ -110,7 +110,7 @@ class _DemoState extends State<Demo> {
                   if (value != null) {
                     date = "${value.day}/${value.month}/${value.year}";
                     setState(() {});
-                    print("=====> ${value.day}/${value.month}/${value.year}");
+                    // print("=====> ${value.day}/${value.month}/${value.year}");
                   }
                 },
               );
@@ -125,7 +125,7 @@ class _DemoState extends State<Demo> {
                 ).then(
                   (value) {
                     if (value != null) {
-                      print("===>  ${value.hour}/${value.minute}");
+                      // print("===>  ${value.hour}/${value.minute}");
                     }
                   },
                 );

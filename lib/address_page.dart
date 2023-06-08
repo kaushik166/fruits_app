@@ -68,7 +68,7 @@ class _AddressPageState extends State<AddressPage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BottomBar(),
+                        builder: (context) => const BottomBar(),
                       ));
                 },
                 child: Container(

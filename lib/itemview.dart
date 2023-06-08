@@ -32,9 +32,9 @@ class _GrapesState extends State<Grapes> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 100,
+            height: 80,
             width: double.infinity,
-            color: Color(0xff4CA300),
+            color: const Color(0xff4CA300),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, top: 20),
               child: Row(
@@ -44,16 +44,16 @@ class _GrapesState extends State<Grapes> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "Details",
                     style: TextStyle(
                         fontSize: 19,
@@ -65,7 +65,7 @@ class _GrapesState extends State<Grapes> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
@@ -74,7 +74,7 @@ class _GrapesState extends State<Grapes> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 180,
+                  height: 170,
                   width: 380,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -87,21 +87,21 @@ class _GrapesState extends State<Grapes> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
                   widget.name,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: "poppins",
                       fontWeight: FontWeight.w600,
                       fontSize: 22),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15),
+                const Padding(
+                  padding: EdgeInsets.only(left: 15),
                   child: Text(
                     "Grapes will provide natural nutrients. The  Chemical\n"
                     "in organic grapes which can be healthier hair and\n"
@@ -110,14 +110,14 @@ class _GrapesState extends State<Grapes> {
                     style: TextStyle(fontSize: 15),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
+                const SizedBox(
+                  height: 8,
                 ),
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               "Nutrition",
               style: TextStyle(
@@ -127,22 +127,22 @@ class _GrapesState extends State<Grapes> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20, top: 10),
+            padding: const EdgeInsets.only(left: 20),
             child: Column(
               children: List.generate(
                 list.length,
                 (index) => Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.circle,
                       size: 10,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
                       list[index],
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 16,
                           fontFamily: "poppins",
                           fontWeight: FontWeight.w200),
@@ -152,8 +152,8 @@ class _GrapesState extends State<Grapes> {
               ),
             ),
           ),
-          SizedBox(
-            height: 20,
+          const SizedBox(
+            height: 10,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -162,7 +162,7 @@ class _GrapesState extends State<Grapes> {
               children: [
                 Text(
                   "\u{20B9}${widget.price}",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: "poppins",
                       fontWeight: FontWeight.w600,
                       fontSize: 18),
@@ -171,9 +171,9 @@ class _GrapesState extends State<Grapes> {
                   height: 35,
                   width: 140,
                   decoration: BoxDecoration(
-                      color: Color(0xff769E49),
+                      color: const Color(0xff769E49),
                       borderRadius: BorderRadius.circular(7)),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Buy Now",
                       style: TextStyle(color: Colors.white, fontSize: 17),

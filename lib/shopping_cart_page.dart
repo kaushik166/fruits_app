@@ -55,14 +55,14 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
-              children: const [
+              children: [
                 Icon(
                   Icons.location_on,
-                  size: 20,
+                  size: 15,
                 ),
                 Text(
                   " 440001  Nagpur ,Maharashtra",
-                  style: TextStyle(fontFamily: "poppins"),
+                  style: TextStyle(fontFamily: "poppins", fontSize: 12),
                 ),
                 Icon(
                   Icons.arrow_drop_down,
@@ -72,7 +72,9 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                 Text(
                   "change address",
                   style: TextStyle(
-                      fontFamily: "poppins", color: Color(0xff7089F0)),
+                      fontSize: 12,
+                      fontFamily: "poppins",
+                      color: Color(0xff7089F0)),
                 )
               ],
             ),

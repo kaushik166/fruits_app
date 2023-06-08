@@ -94,66 +94,74 @@ class _PaymentWalletState extends State<PaymentWallet> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 50,
-                      width: 90,
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: "1234",
-                          hintStyle: TextStyle(
-                              fontFamily: "poppins",
-                              fontWeight: FontWeight.w600),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(7),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        // width: 90,
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: "1234",
+                            hintStyle: TextStyle(
+                                fontFamily: "poppins",
+                                fontWeight: FontWeight.w600),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: "5678",
-                          hintStyle: TextStyle(
-                              fontFamily: "poppins",
-                              fontWeight: FontWeight.w600),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(7),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        // width: 90,
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: "5678",
+                            hintStyle: TextStyle(
+                                fontFamily: "poppins",
+                                fontWeight: FontWeight.w600),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: "9012",
-                          hintStyle: TextStyle(
-                              fontFamily: "poppins",
-                              fontWeight: FontWeight.w600),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(7),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        // width: 90,
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: "9012",
+                            hintStyle: TextStyle(
+                                fontFamily: "poppins",
+                                fontWeight: FontWeight.w600),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 50,
-                      width: 90,
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: "3456",
-                          hintStyle: TextStyle(
-                              fontFamily: "poppins",
-                              fontWeight: FontWeight.w600),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(7),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        // width: 90,
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: "3456",
+                            hintStyle: TextStyle(
+                                fontFamily: "poppins",
+                                fontWeight: FontWeight.w600),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                         ),
                       ),
@@ -195,18 +203,20 @@ class _PaymentWalletState extends State<PaymentWallet> {
                     SizedBox(
                       width: 10,
                     ),
-                    Container(
-                      height: 50,
-                      width: 130,
-                      child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: "2034",
-                          hintStyle: TextStyle(
-                              fontFamily: "poppins",
-                              fontWeight: FontWeight.w600),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(7),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        //width: 130,
+                        child: TextField(
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            hintText: "2034",
+                            hintStyle: TextStyle(
+                                fontFamily: "poppins",
+                                fontWeight: FontWeight.w600),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(7),
+                            ),
                           ),
                         ),
                       ),

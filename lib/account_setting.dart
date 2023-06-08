@@ -21,7 +21,7 @@ class _AccountSettingState extends State<AccountSetting> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -31,16 +31,16 @@ class _AccountSettingState extends State<AccountSetting> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     " Account Setting",
                     style: TextStyle(
                         fontSize: 17,
@@ -64,14 +64,15 @@ class _AccountSettingState extends State<AccountSetting> {
                     children: [
                       Icon(
                         list[index]["icon"],
-                        color: Color(0xff69A03A),
+                        color: const Color(0xff69A03A),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
                       Text(
                         list[index]["name"],
-                        style: TextStyle(fontFamily: "poppins", fontSize: 16),
+                        style: const TextStyle(
+                            fontFamily: "poppins", fontSize: 16),
                       )
                     ],
                   ),
