@@ -20,7 +20,7 @@ class VerificationPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => VerifyCodeSend(),
+                    builder: (context) => const VerifyCodeSend(),
                   ),
                 );
               },
@@ -34,7 +34,7 @@ class VerificationPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VerifyCodeSend(),
+                      builder: (context) => const VerifyCodeSend(),
                     ));
               },
               child: const Text(

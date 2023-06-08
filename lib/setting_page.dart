@@ -27,7 +27,7 @@ class _SettingPageState extends State<SettingPage> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -37,16 +37,16 @@ class _SettingPageState extends State<SettingPage> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "Setting",
                     style: TextStyle(
                         fontSize: 17,
@@ -70,28 +70,28 @@ class _SettingPageState extends State<SettingPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => AccountSetting(),
+                          builder: (context) => const AccountSetting(),
                         ),
                       );
                     } else if (index == 1) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NotificationSetting(),
+                          builder: (context) => const NotificationSetting(),
                         ),
                       );
                     } else if (index == 2) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LanguagesSetting(),
+                          builder: (context) => const LanguagesSetting(),
                         ),
                       );
                     } else if (index == 3) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ChangeAddressPage(),
+                          builder: (context) => const ChangeAddressPage(),
                         ),
                       );
                     }
@@ -102,14 +102,15 @@ class _SettingPageState extends State<SettingPage> {
                       children: [
                         Icon(
                           list[index]["icon"],
-                          color: Color(0xff69A03A),
+                          color: const Color(0xff69A03A),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(
                           list[index]["name"],
-                          style: TextStyle(fontFamily: "poppins", fontSize: 16),
+                          style: const TextStyle(
+                              fontFamily: "poppins", fontSize: 16),
                         )
                       ],
                     ),

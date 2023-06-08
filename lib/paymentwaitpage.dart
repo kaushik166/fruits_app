@@ -19,7 +19,7 @@ class PaymentWait extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PaymentSuccess(),
+                    builder: (context) => const PaymentSuccess(),
                   ),
                 );
               },
@@ -33,7 +33,7 @@ class PaymentWait extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PaymentSuccess(),
+                    builder: (context) => const PaymentSuccess(),
                   ),
                 );
               },

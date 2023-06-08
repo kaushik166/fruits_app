@@ -16,7 +16,7 @@ class _LanguagesSettingState extends State<LanguagesSetting> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -26,16 +26,16 @@ class _LanguagesSettingState extends State<LanguagesSetting> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     " Languages Setting",
                     style: TextStyle(
                         fontSize: 17,
@@ -50,7 +50,7 @@ class _LanguagesSettingState extends State<LanguagesSetting> {
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 10),
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "Language",
                   style: TextStyle(
@@ -62,7 +62,7 @@ class _LanguagesSettingState extends State<LanguagesSetting> {
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 10),
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "Language",
                   style: TextStyle(

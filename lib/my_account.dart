@@ -48,7 +48,7 @@ class _MyAccountState extends State<MyAccount> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset("assets/images/Ellipse.png"),
-                      SizedBox(
+                      const SizedBox(
                         width: 70,
                       ),
                       Image.asset('assets/images/edit.png'),
@@ -75,7 +75,7 @@ class _MyAccountState extends State<MyAccount> {
           ),
           Expanded(
             child: SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               //scrollDirection: Axis.vertical,
               child: Padding(
                 padding: const EdgeInsets.only(left: 20),
@@ -88,35 +88,35 @@ class _MyAccountState extends State<MyAccount> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => MyOrder(),
+                              builder: (context) => const MyOrder(),
                             ),
                           );
                         } else if (index == 1) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FavouritePage(),
+                              builder: (context) => const FavouritePage(),
                             ),
                           );
                         } else if (index == 2) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SettingPage(),
+                              builder: (context) => const SettingPage(),
                             ),
                           );
                         } else if (index == 3) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => ShoppingCartPage(),
+                              builder: (context) => const ShoppingCartPage(),
                             ),
                           );
                         } else if (index == 6) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => HelpPage(),
+                              builder: (context) => const HelpPage(),
                             ),
                           );
                         } else if (index == 7) {
@@ -129,15 +129,15 @@ class _MyAccountState extends State<MyAccount> {
                           children: [
                             Icon(
                               list[index]["icon"],
-                              color: Color(0xff4CA300),
+                              color: const Color(0xff4CA300),
                               size: 30,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             Text(
                               list[index]["name"],
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontFamily: "poppins", fontSize: 18),
                             ),
                           ],
@@ -159,25 +159,25 @@ class _MyAccountState extends State<MyAccount> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(
+          title: const Text(
             "Are You Sure You want to Log Out?",
             style: TextStyle(fontFamily: "poppins"),
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("NO"),
+              child: const Text("NO"),
             ),
             TextButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => LoginPage(),
+                    builder: (context) => const LoginPage(),
                   ),
                 );
               },
-              child: Text("YES"),
+              child: const Text("YES"),
             ),
           ],
         );

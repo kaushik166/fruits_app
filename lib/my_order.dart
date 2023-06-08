@@ -21,7 +21,7 @@ class _MyOrderState extends State<MyOrder> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -31,16 +31,16 @@ class _MyOrderState extends State<MyOrder> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "My Orders",
                     style: TextStyle(
                         fontSize: 17,
@@ -73,25 +73,25 @@ class _MyOrderState extends State<MyOrder> {
                         children: [
                           Text(
                             list[index]["name"],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontFamily: "poppins",
                                 fontWeight: FontWeight.bold),
                           ),
                           Row(
                             children: List.generate(
                                 5,
-                                (index) => Icon(
+                                (index) => const Icon(
                                       Icons.star,
                                       size: 14,
                                       color: Color(0xffA6A1A1),
                                     )),
                           ),
-                          Text(
+                          const Text(
                             "Rate the Product",
                             style: TextStyle(
                                 fontFamily: "poppins", color: Colors.grey),
                           ),
-                          Text(
+                          const Text(
                             "Deliverd on 24 feb 2022",
                             style: TextStyle(
                                 fontFamily: "poppins",
@@ -100,7 +100,7 @@ class _MyOrderState extends State<MyOrder> {
                         ],
                       ),
                     ),
-                    Icon(
+                    const Icon(
                       Icons.navigate_next,
                       size: 29,
                     )

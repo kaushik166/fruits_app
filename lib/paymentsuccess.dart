@@ -19,7 +19,7 @@ class PaymentSuccess extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset("assets/images/codesend.png"),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Icon(

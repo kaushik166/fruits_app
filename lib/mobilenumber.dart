@@ -17,7 +17,7 @@ class _MobileNumberState extends State<MobileNumber> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
@@ -28,22 +28,22 @@ class _MobileNumberState extends State<MobileNumber> {
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.black87),
                         borderRadius: BorderRadius.circular(10)),
-                    child: Center(child: Text("+91")),
+                    child: const Center(child: Text("+91")),
                   ),
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide:
-                                  BorderSide(width: 5, color: Colors.green)),
+                              borderSide: const BorderSide(
+                                  width: 5, color: Colors.green)),
                           filled: false),
                       onChanged: (value) {
                         if (value.length == 10) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => VerificationPage(),
+                              builder: (context) => const VerificationPage(),
                             ),
                           );
                         }
@@ -53,7 +53,7 @@ class _MobileNumberState extends State<MobileNumber> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               GestureDetector(
@@ -61,19 +61,19 @@ class _MobileNumberState extends State<MobileNumber> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VerificationPage(),
+                      builder: (context) => const VerificationPage(),
                     ),
                   );
                 },
                 child: Container(
                   height: 60,
-                  margin: EdgeInsets.symmetric(vertical: 20),
+                  margin: const EdgeInsets.symmetric(vertical: 20),
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Verify",
                       style: TextStyle(color: Colors.white, fontSize: 18),

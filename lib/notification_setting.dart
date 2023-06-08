@@ -18,7 +18,7 @@ class _NotificationSettingState extends State<NotificationSetting> {
           Container(
             height: 100,
             width: double.infinity,
-            color: Color(0xff69A03A),
+            color: const Color(0xff69A03A),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, bottom: 20),
               child: Row(
@@ -28,16 +28,16 @@ class _NotificationSettingState extends State<NotificationSetting> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back_ios_outlined,
                       color: Colors.white,
                       size: 18,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
-                  Text(
+                  const Text(
                     "Notification Setting",
                     style: TextStyle(
                         fontSize: 17,
@@ -49,20 +49,20 @@ class _NotificationSettingState extends State<NotificationSetting> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Icon(
+              const Icon(
                 Icons.notifications,
                 color: Color(0xff69A03A),
                 size: 36,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     "My Account",
                     style: TextStyle(
@@ -79,7 +79,7 @@ class _NotificationSettingState extends State<NotificationSetting> {
                 ],
               ),
               Switch(
-                activeColor: Color(0xff69A03A),
+                activeColor: const Color(0xff69A03A),
                 value: isSwitch,
                 onChanged: (bool? k) {
                   isSwitch = k!;
@@ -88,20 +88,20 @@ class _NotificationSettingState extends State<NotificationSetting> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Icon(
+              const Icon(
                 Icons.notifications,
                 color: Color(0xff69A03A),
                 size: 36,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     "Pramotional Notifications",
                     style: TextStyle(
@@ -119,7 +119,7 @@ class _NotificationSettingState extends State<NotificationSetting> {
               ),
               Switch(
                 value: isSwitches,
-                activeColor: Color(0xff69A03A),
+                activeColor: const Color(0xff69A03A),
                 onChanged: (bool? k) {
                   isSwitches = k!;
                   setState(() {});

@@ -21,7 +21,7 @@ class VerifyCodeSend extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AddressPage(),
+                    builder: (context) => const AddressPage(),
                   ),
                 );
               },
@@ -35,7 +35,7 @@ class VerifyCodeSend extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AddressPage(),
+                      builder: (context) => const AddressPage(),
                     ));
               },
               child: const Text(
