@@ -43,7 +43,7 @@ class _FruitBoxWidgetState extends State<FruitBoxWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(right: 10),
+                margin: const EdgeInsets.only(right: 10),
                 width: 115,
                 decoration: BoxDecoration(
                   color: Colors.transparent,
@@ -54,17 +54,17 @@ class _FruitBoxWidgetState extends State<FruitBoxWidget> {
                   height: 130,
                 ),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               Row(
                 children: List.generate(
                   5,
                   (index) => index == 4
-                      ? Icon(
+                      ? const Icon(
                           Icons.star,
                           size: 18,
                           color: Color(0xffA6A1A1),
                         )
-                      : Icon(
+                      : const Icon(
                           Icons.star,
                           size: 18,
                           color: Color(0xffe9ab5f),
@@ -73,10 +73,10 @@ class _FruitBoxWidgetState extends State<FruitBoxWidget> {
               ),
               Text(
                 widget.title,
-                style: TextStyle(
+                style: const TextStyle(
                     fontFamily: "poppins", fontWeight: FontWeight.w600),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text("\u{20B9}${widget.price}")
@@ -91,12 +91,12 @@ class _FruitBoxWidgetState extends State<FruitBoxWidget> {
                 radius: 13,
                 backgroundColor: Colors.white,
                 child: widget.isFavorite
-                    ? Icon(
+                    ? const Icon(
                         Icons.favorite,
                         size: 18,
                         color: Colors.red,
                       )
-                    : Icon(
+                    : const Icon(
                         Icons.favorite_border,
                         size: 18,
                         color: Colors.red,

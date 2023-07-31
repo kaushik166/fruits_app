@@ -21,8 +21,8 @@
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.6.0] /Users/kaushikkachhadiya/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-22        android:label="fruits_app" >
+21        android:icon="@mipmap/launcher_icon"
+22        android:label="Fruits Market" >
 23        <activity
 24            android:name="com.example.fruits_app.MainActivity"
 25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
